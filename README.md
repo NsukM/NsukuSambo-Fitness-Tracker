@@ -19,5 +19,4 @@ The **NsukuSambo Fitness Tracker** is a real-time fitness monitoring system desi
 2. Follow the instructions in the documentation to set up the system.
 3. Use the provided APIs or mobile app to start tracking your fitness activities.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
