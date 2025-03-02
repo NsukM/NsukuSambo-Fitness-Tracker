@@ -1,3 +1,6 @@
+
+
+```markdown
 # NsukuSambo Fitness Tracker Architecture
 
 ## C4 Diagrams
@@ -17,8 +20,12 @@ C4Context
   Rel(user, fitnessTracker, "Uses")
   Rel(fitnessTracker, wearableDevice, "Receives data from")
   Rel(fitnessTracker, mobileApp, "Sends data to")
+```
 
+### 2. Container Diagram
+The container diagram shows the high-level technology choices and how responsibilities are distributed across containers.
 
+```mermaid
 C4Container
   title Container Diagram for NsukuSambo Fitness Tracker
 
@@ -31,8 +38,12 @@ C4Container
   Rel(mobileApp, backend, "Sends/Receives data")
   Rel(backend, database, "Reads/Writes data")
   Rel(backend, cloud, "Uses for data storage and processing")
+```
 
+### 3. Component Diagram
+The component diagram breaks down the backend server into its components and shows how they interact.
 
+```mermaid
 C4Component
   title Component Diagram for NsukuSambo Fitness Tracker Backend
 
@@ -44,3 +55,6 @@ C4Component
   Rel(api, auth, "Uses")
   Rel(api, dataProcessor, "Uses")
   Rel(dataProcessor, databaseService, "Reads/Writes data")
+```
+
+---
